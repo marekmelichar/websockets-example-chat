@@ -1,9 +1,9 @@
 // Make connection
 // var port = process.env.PORT ? process.env.PORT : 'http://localhost:4000'
 
-var port = require('../config.js');
+// var port = require('../config.js');
 
-var socket = io.connect(port);
+var socket = io.connect('https://mm-sockets.herokuapp.com/');
 
 // Query DOM
 var message = document.getElementById('message'),
