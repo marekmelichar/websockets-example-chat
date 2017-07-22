@@ -1,10 +1,11 @@
 var express = require('express');
 var socket = require('socket.io');
+var port = require('./config.js');
 
 // App setup
 var app = express();
 
-app.set('port', (process.env.PORT || 4000))
+app.set('port', port)
 
 var server = app.listen(app.get('port'), function(){
     console.log('listening for requests on port ', app.get('port'));

@@ -1,5 +1,7 @@
 // Make connection
-var port = process.env.PORT ? process.env.PORT : 'http://localhost:4000'
+// var port = process.env.PORT ? process.env.PORT : 'http://localhost:4000'
+
+var port = require('../config.js');
 
 var socket = io.connect(port);
 
